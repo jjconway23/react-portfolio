@@ -1,7 +1,7 @@
 import React from 'react';
 import "./portfolio.css";
 import hangman from "../../assets/hangman.png"
-import SportsQuiz from "../../assets/SportsQuiz.png"
+import SportsQuiz from "../../assets/SportsQuiz.PNG"
 const Portfolio = () => {
   return (
     <section id="portfolio">
