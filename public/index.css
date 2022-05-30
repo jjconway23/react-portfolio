@@ -68,6 +68,15 @@ section > h2 {
     margin-bottom: 3rem;
 }
 
+a {
+    color: var(--color-primary);
+}
+.header__socials > a {
+    font-size: 1.4rem;
+}
+a:hover {
+        color: var(--color-white);
+}
 /* Button Styles */
 .btn{
     width: max-content;
