@@ -1,5 +1,6 @@
 import React from 'react';
 import HeaderButtons from './HeaderButtons';
+import HeaderSocials from './HeaderSocials';
 import "./header.css";
 import ME from "../../assets/ME.jpg"
 
@@ -11,14 +12,13 @@ const Header = () => {
         <h1>Jacob Peat</h1>
         <h5>Junior Full Stack Developer</h5>
         <HeaderButtons />
-
+        <HeaderSocials />
         <div className="me">
-            <img src={ME} alt="me" />
+            {/* <img src={ME} alt="me" /> */}
         </div>
         <a href="#contact" className='scroll__down'>Scroll Down</a>
 
       </div>
-
     </header>
   )
 };
