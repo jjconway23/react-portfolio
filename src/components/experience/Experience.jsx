@@ -12,14 +12,35 @@ const Experience = () => {
             <div className="experence__content">
               <article className="experience__details">
                 <BsFillCheckSquareFill />
+                <h4>HTML</h4>
               </article>
-
+              <article className="experience__details">
+                <BsFillCheckSquareFill />
+                <h4>CSS3</h4>
+              </article>
+              <article className="experience__details">
+                <BsFillCheckSquareFill />
+                <h4>Javscript</h4>
+              </article>
+              <article className="experience__details">
+                <BsFillCheckSquareFill />
+                <h4>React</h4>
+              </article>
             </div>
 
           </div>
           <div className="backend__experience">
 
-          <div className="experence__content"></div>
+          <div className="experence__content">
+          <article className="experience__details">
+                <BsFillCheckSquareFill />
+                <h4>Java</h4>
+              </article>
+              <article className="experience__details">
+                <BsFillCheckSquareFill />
+                <h4>Python</h4>
+              </article>
+          </div>
 
           </div>
 
