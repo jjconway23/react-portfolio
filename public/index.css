@@ -77,6 +77,11 @@ a {
 a:hover {
         color: var(--color-white);
 }
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
 /* Button Styles */
 .btn{
     width: max-content;
