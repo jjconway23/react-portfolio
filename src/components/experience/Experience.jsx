@@ -9,35 +9,35 @@ const Experience = () => {
         <div className="container experience__container">
           <div className="experience__frontend">
             <h3>Frontend Development</h3>
-            <div className="experence__content">
+            <div className="experience__content">
               <article className="experience__details">
-                <BsFillCheckSquareFill />
+                <BsFillCheckSquareFill className="experience__details-icon"/>
                 <h4>HTML</h4>
               </article>
               <article className="experience__details">
-                <BsFillCheckSquareFill />
+                <BsFillCheckSquareFill className="experience__details-icon"/>
                 <h4>CSS3</h4>
               </article>
               <article className="experience__details">
-                <BsFillCheckSquareFill />
+                <BsFillCheckSquareFill className="experience__details-icon"/>
                 <h4>Javscript</h4>
               </article>
               <article className="experience__details">
-                <BsFillCheckSquareFill />
+                <BsFillCheckSquareFill className="experience__details-icon"/>
                 <h4>React</h4>
               </article>
             </div>
 
           </div>
           <div className="backend__experience">
-
+            <h3>Backend Development</h3>
           <div className="experence__content">
           <article className="experience__details">
-                <BsFillCheckSquareFill />
+                <BsFillCheckSquareFill className="experience__details-icon"/>
                 <h4>Java</h4>
               </article>
               <article className="experience__details">
-                <BsFillCheckSquareFill />
+                <BsFillCheckSquareFill className="experience__details-icon"/>
                 <h4>Python</h4>
               </article>
           </div>
