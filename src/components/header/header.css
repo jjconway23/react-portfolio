@@ -16,3 +16,12 @@ header{
     gap: 1.2rem;
     justify-content: center;
 }
+/* Header Socials */
+.header__socials{
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position:absolute;
+    left: 0;
+    bottom: 3rem;
+}
