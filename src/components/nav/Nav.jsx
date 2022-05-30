@@ -9,7 +9,7 @@ import "./nav.css";
 const Nav = () => {
   return (
     <nav className='flex'>
-      <a href="#"><AiFillHome /></a>
+      <a href="#" className='active'><AiFillHome /></a>
       <a href="#about"><SiAboutdotme /></a>
       <a href="#experience"><BiBook/></a>
       <a href="#portfolio"><BsLaptopFill /></a>
