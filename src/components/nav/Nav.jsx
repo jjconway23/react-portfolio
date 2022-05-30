@@ -11,7 +11,7 @@ const Nav = () => {
   return (
     <nav className='flex'>
       <a href="#" onClick={()=> setActiveClass("#")} className={activeClass === "#" ? "active" : ""}><AiFillHome /></a>
-      <a href="#about" onClick={()=> setActiveClass("about")} className={activeClass === "about" ? "active" : ""}><SiAboutdotme /></a>
+      {/* <a href="#about" onClick={()=> setActiveClass("about")} className={activeClass === "about" ? "active" : ""}><SiAboutdotme /></a> */}
       <a href="#experience" onClick={()=> setActiveClass("experience")} className={activeClass === "experience" ? "active" : ""}><BiBook/></a>
       <a href="#portfolio" onClick={()=> setActiveClass("portfolio")} className={activeClass === "portfolio" ? "active" : ""}><BsLaptopFill /></a>
       <a href="#contact" onClick={()=> setActiveClass("contact")} className={activeClass === "contact" ? "active" : ""}><AiFillMessage /></a>
