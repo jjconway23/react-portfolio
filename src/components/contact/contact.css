@@ -1,3 +1,6 @@
+#contact{
+    height: 80vh;
+}
 .container.contact__container {
     width: 50%;
     display: grid;
@@ -32,4 +35,19 @@
 }
 .contact__option h5 {
     columns: var(--color-light);
+}
+
+/* Form */
+form{
+    flex-direction: column;
+    gap: 1.2rem;
+}
+input,textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius:0.5rem;
+    background: transparent;
+    border: 2px solid var(--color-primary-variant);
+    resize: none;
+    color: #fff
 }
