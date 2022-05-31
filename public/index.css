@@ -19,6 +19,8 @@
     --color-white: #fff;
     --color-light: rgba(255,255,255,0.6);
 
+    --transition: all 400ms ease;
+
     --container-width-lg: 75%;
     --container-width-md:86%;
     --container-width-sm: 90%;
@@ -71,6 +73,8 @@ section > h2 {
 
 a {
     color: var(--color-primary);
+    transition: var(--transition);
+
 }
 .header__socials > a {
     font-size: 1.4rem;
@@ -103,4 +107,23 @@ img{
 .btn-primary{
     background-color: var(--color-primary);
     color: var(--color-bg);
+}
+
+/* Media Queries (Medium Devices) */
+@media screen and (max-width: 1024px){
+    .container{
+        width: var(--container-width-md);
+    }
+    section{
+        margin-top: 6rem;
+    }
+}
+/* Media Queries (small Devices) */
+@media screen and (max-width: 600px){
+    .container{
+        width: var(--container-width-sm);
+    }
+    section > h2{
+        margin-top: 2rem;
+    }
 }
