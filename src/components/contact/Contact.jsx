@@ -10,12 +10,13 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+    emailjs.sendForm("service_jifk8t6", 'template_2ambh8d', form.current, 'mMdiDDcsYCrevifC2')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
+      e.target.reset()
   };
 
 
@@ -38,7 +39,7 @@ const Contact = () => {
                 <a href="https://api.whatsapp.com/send?phone+447538521490" target="_blank">Send a message</a>
             </article>
           </div>
-          <form action="" className='flex'>
+          <form ref={form} onSubmit={sendEmail} className='flex'>
             <input type="text" name="name"  placeholder='Your Full Name' required/>
             <input type="email" name="email" placeholder="Your email"  />
             <textarea name="message" rows="10" placeholder="Your Message"required></textarea>
