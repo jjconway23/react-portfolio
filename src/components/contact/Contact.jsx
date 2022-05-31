@@ -1,14 +1,21 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import "./contact.css";
 import {AiTwotoneMail} from "react-icons/ai";
 import {BsWhatsapp} from "react-icons/bs";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
+  const [thankYouMessage, setThankYouMessage] = useState(false)
   const form = useRef();
+  const emailSentMessage = () => {
+    setTimeout(()=>{
+        setThankYouMessage(false)
+    },6000)
+  }
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setThankYouMessage(true)
 
     emailjs.sendForm("service_jifk8t6", 'template_2ambh8d', form.current, 'mMdiDDcsYCrevifC2')
       .then((result) => {
@@ -16,9 +23,12 @@ const Contact = () => {
       }, (error) => {
           console.log(error.text);
       });
+      emailSentMessage()
       e.target.reset()
-  };
 
+
+  };
+  
 
   return (
     <section id="contact">
@@ -39,7 +49,11 @@ const Contact = () => {
                 <a href="https://api.whatsapp.com/send?phone+447538521490" target="_blank">Send a message</a>
             </article>
           </div>
+          
           <form ref={form} onSubmit={sendEmail} className='flex'>
+          {thankYouMessage && <div className="thank-you-container">
+            <span className='thank-you-message'>Thank You for your message</span>
+          </div>}
             <input type="text" name="name"  placeholder='Your Full Name' required/>
             <input type="email" name="email" placeholder="Your email"  />
             <textarea name="message" rows="10" placeholder="Your Message"required></textarea>
