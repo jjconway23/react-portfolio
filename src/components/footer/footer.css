@@ -22,6 +22,9 @@ footer a {
 /* Media Queries */
 
 @media screen and (max-width:600px){
+    footer{
+        height: 50vh;
+    }
     .permalinks{
         flex-direction: column;
         gap: 1.5rem;
