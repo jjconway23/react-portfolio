@@ -14,7 +14,8 @@ const Header = () => {
         <HeaderButtons />
         <HeaderSocials />
         <div className="me-container">
-            {/* <img src={ME} alt="me" className='me' /> */}
+            <p>Software Developer currently undertaking a Full stack Software Development Diploma from Code Institute. Skilled in HTML, CSS JavaScript, Java, and Python.  </p>
+            
         </div>
         <a href="#contact" className='scroll__down'>Scroll Down</a>
 
