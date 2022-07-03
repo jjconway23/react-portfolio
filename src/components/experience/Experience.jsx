@@ -40,6 +40,10 @@ const Experience = () => {
                 <BsFillCheckSquareFill className="experience__details-icon"/>
                 <h4>Python</h4>
               </article>
+              <article className="experience__details">
+                <BsFillCheckSquareFill className="experience__details-icon"/>
+                <h4>Spring</h4>
+              </article>
           </div>
 
           </div>

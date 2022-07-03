@@ -35,7 +35,8 @@ header{
 /* Header Image */
 .me-container{
     background: linear-gradient(var(--color-primary), transparent);
-    width: 36rem;
+    max-width: 36rem;
+    width: 100%;
     height: 15rem;
     margin-top: 4rem;
     border-radius: 2rem 2rem 0 0;
@@ -66,7 +67,7 @@ header{
 /* Media Queries (small Devices) */
 @media screen and (max-width: 600px){
     header{
-        height: 100vh;
+        margin-bottom: 10rem;
     }
     .header__socials, .scroll__down{
         display: none;

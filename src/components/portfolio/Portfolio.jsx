@@ -11,7 +11,7 @@ const Portfolio = () => {
             <h3>{data.title}</h3>
             <div className="portfolio__item-cta">
               <a href={data.github} className='btn'>Github</a>
-              <a href={data.demo} className='btn btn-primary' target="_blank">Live Website</a>
+              {data.hasLiveWebsite && <a href={data.demo} className='btn btn-primary' target="_blank">Live Website</a>}
             </div>
             
     </article>
